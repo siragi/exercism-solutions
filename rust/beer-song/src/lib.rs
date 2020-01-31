@@ -32,8 +32,7 @@ pub fn verse(n: u32) -> String {
 }
 
 pub fn sing(start: u32, end: u32) -> String {
-    // you get the song, verse by verse, with a trailing new line
-    let mut song = String::new();
+    // you get the song, verse by verse (with a trailing new line)
 
     let beers = (end..=start).rev(); // Ranges can only grow, but they can be reversed afterwards.
 
