@@ -1,7 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "armstrong-numbers"
-		}
-	]
+    "folders": [
+        {
+            "path": "armstrong-numbers"
+        },
+        {
+            "path": "gigasecond"
+        }
+    ]
 }
