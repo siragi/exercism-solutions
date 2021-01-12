@@ -1,0 +1,12 @@
+[package]
+name = "dot_dsl_derive"
+version = "0.1.0"
+authors = ["Simon Giger <simon.giger@tuta.io>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "1.0.58"
+quote = "1.0.8"
