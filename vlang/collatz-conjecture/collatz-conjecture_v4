@@ -1,0 +1,28 @@
+module main
+
+fn collatz(number int) !int {
+	if number < 0 {
+		return error('Err: Number below zero')
+	}
+	return collatz_helper(0, number)
+}
+
+fn collatz_helper(number int) int {
+
+
+	// Base case of recursion
+	if number == 1 {
+		return acc
+	}
+
+	// any odd number ends with a true bit & (using bitwise AND) true bit from bitmask = true 
+
+	if number % 2 != 0 {  
+		// odd: multiply n by 3 and add 1 to get 3n + 1.
+		//n = 3*n + 1 
+		return collatz_helper(acc+1, 3*number+1)
+	} else {
+		// even: divide n by 2 to get n / 2.
+		return collatz_helper(acc+1, number/2)
+	}
+}

@@ -1,0 +1,10 @@
+[package]
+edition = "2018"
+name = "dot-dsl"
+# btw. dot-dsl is ill named since Rust needs to import via underscore name 'use dot_dsl'
+version = "0.1.0"
+
+[dependencies]
+maplit = "1.0.2"
+dot_dsl_derive = { path = "dot_dsl_derive" } 
+# derive macro: https://doc.rust-lang.org/book/ch19-06-macros.html The convention for structuring crates and macro crates is as follows: for a crate named foo, a custom derive procedural macro crate is called foo_derive. Let’s start a new crate called dot_dsl_derive inside our dot-dsl project.
