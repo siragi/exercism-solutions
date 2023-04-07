@@ -18,6 +18,11 @@
 
 **/.stack-work
 **/stack.yaml.lock
+
 **/.cache
 **/.lein-failures
 **/.calva/output-window
+
+# zig
+**/zig-cache/*
+**/zig-out
