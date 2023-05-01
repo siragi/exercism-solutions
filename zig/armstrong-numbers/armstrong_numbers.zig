@@ -7,6 +7,7 @@ pub fn isArmstrongNumber(num: u128) bool {
     var n = num;
     var p: usize = 0;
     var sum: u128 = 0;
+    // Initialisation needed?
     // for (&rem_list) |*item| {
     //     item.* = 0;
     // }
