@@ -1,0 +1,19 @@
+find concat
+find transpose
+find toText
+find head
+find : [Text] -> Text
+return first element
+view 27
+find first element
+cd exercism
+view 4
+find : Text -> [Text]
+help
+help .base.Text.words
+find : Text -> [Text]
+help 4
+find : Text -> [Text]
+help words
+4
+find : Text -> [Text]

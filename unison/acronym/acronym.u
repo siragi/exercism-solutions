@@ -1,0 +1,9 @@
+use Text
+use List
+
+
+acronym.abbreviate : Text -> Text
+acronym.abbreviate test = 
+    concatOptional (map head (words test))
+
+-- todo "implement abbreviate function"
