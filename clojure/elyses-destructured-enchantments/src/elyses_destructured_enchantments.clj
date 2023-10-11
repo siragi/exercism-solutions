@@ -1,23 +1,37 @@
 (ns elyses-destructured-enchantments)
 
+
+;; https://clojure.org/guides/destructuring#_where_to_destructure
+;; When defining a function in clojure, destructuring can be applied on the incoming parameters, just like in a let..
 (defn first-card
   "Returns the first card from deck."
-  [deck]
-  (let [[x & _] deck]
-    x))
-
+  [[first]] ;; destructuring of the deck
+  first)
+;; (defn first-card
+;;   "Returns the first card from deck."
+;;   [deck]
+;;   (let [[x & _] deck]
+;;     x))
 (defn second-card
   "Returns the second card from deck."
-  [deck]
-  (let [[_ y & _] deck]
-    y))
+  [[_ second]]
+  second)
+;; (defn second-card
+;;   "Returns the second card from deck."
+;;   [deck]
+;;   (let [[_ y & _] deck]
+;;     y))
 
 
 (defn swap-top-two-cards
   "Returns the deck with first two items reversed."
-  [deck]
-  (let [[x y & xs] deck]
-    (concat [y x] xs)))
+  [[x y & xs]]
+  (concat [y x] xs))
+;; (defn swap-top-two-cards
+;;   "Returns the deck with first two items reversed."
+;;   [deck]
+;;   (let [[x y & xs] deck]
+;;     (concat [y x] xs)))
 
 
 (defn discard-top-card
