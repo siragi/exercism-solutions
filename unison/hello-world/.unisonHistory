@@ -1,0 +1,26 @@
+quit
+ls
+add
+delete.term hello 
+load hello.test.u
+ls
+delete.namespace hello
+ls
+add
+ls
+load hello.test.u
+ls
+update
+load hello.test.u
+add
+cd ..
+cd ..
+..
+ls
+cd lib.base
+ls
+fork .base lib.base
+cd exercism
+ls
+quit
+quitg
