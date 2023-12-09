@@ -22,7 +22,17 @@
 **/.cache
 **/.lein-failures
 **/.calva/output-window
+**/Snap.*
+**/javacore.*
+**/heapdump.*
+**/core.*
+**/.cpcache*
+**/.nrepl-port
 
 # zig
 **/zig-cache/*
 **/zig-out
+
+# node/js/npm/pnpm
+**/node_modules
+**/pnpm-lock.yaml
