@@ -1,0 +1,18 @@
+section .data
+    input db "Bob",0
+
+section .bss
+    buf resb 256
+
+section .text
+extern two_fer
+global _start
+
+_start:
+    mov rdi, input
+    mov rsi, buf
+    call two_fer
+
+    mov rdi,rax
+    mov rax, 60
+    syscall
