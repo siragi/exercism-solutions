@@ -1,0 +1,13 @@
+default rel
+
+section .rodata
+    input dd 121 
+section .text
+extern square_root
+global _start
+_start:
+    mov edi, [input]  
+    call square_root
+_end:
+    mov rax,60
+    syscall
